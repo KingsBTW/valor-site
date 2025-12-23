@@ -7,8 +7,8 @@ import { AdminHeader } from "@/components/admin/admin-header"
 import { getSession } from "@/lib/auth"
 
 export const metadata: Metadata = {
-  title: "Admin Dashboard - Warp Cheats",
-  description: "Manage your Warp Cheats platform",
+  title: "Admin Dashboard - Valor",
+  description: "Manage your Valor platform",
 }
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -37,3 +37,4 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     </div>
   )
 }
+

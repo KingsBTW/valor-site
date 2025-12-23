@@ -12,9 +12,9 @@ export interface SiteSettings {
 
 const defaultSettings: SiteSettings = {
   payment_provider: "stripe",
-  cardsetup_store_url: "https://warpcheats.com",
-  site_name: "Warp Cheats",
-  site_url: "https://warpcheats.com",
+  cardsetup_store_url: "https://valor.com",
+  site_name: "Valor",
+  site_url: "https://valor.com",
   maintenance_mode: false,
 }
 

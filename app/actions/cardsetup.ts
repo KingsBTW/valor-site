@@ -99,7 +99,7 @@ export async function createCardSetupInvoice(data: {
     throw new Error("Failed to create order")
   }
 
-  const storeUrl = (process.env.CARDSETUP_STORE_URL || "https://warpcheats.com").replace(/\/$/, "") + "/"
+  const storeUrl = (process.env.CARDSETUP_STORE_URL || "https://valor.com").replace(/\/$/, "") + "/"
   const callbackUrl = `${storeUrl}checkout/cardsetup-callback/?order_id=${order.id}`
 
   const invoiceData = {
@@ -442,3 +442,4 @@ export async function finalizeCardSetupPayment(transactionId: string, orderId: s
     throw error
   }
 }
+

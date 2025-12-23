@@ -1,11 +1,11 @@
--- Warp Cheats Products - Real Product Catalog
+-- Valor Products - Real Product Catalog
 -- Fortnite External Cheats
 INSERT INTO products (slug, name, game, category, description, features, image_url, status, tags, popular) VALUES
 ('disconnect-fortnite-external', 'Disconnect - Fortnite External', 'Fortnite', 'cheat', 'Premium external cheat for Fortnite with advanced features and undetected status.', ARRAY['Aimbot', 'Player ESP', 'Loot ESP', 'Radar', 'Stream Safe', 'Auto Update'], 'https://i.postimg.cc/TwRcw5QZ/disconnect-fn.webp', 'undetected', ARRAY['fortnite', 'external', 'premium'], true),
 ('exodus-fortnite-external', 'Exodus - Fortnite External', 'Fortnite', 'cheat', 'High-performance external Fortnite cheat with smooth aimbot and advanced ESP features.', ARRAY['Smooth Aimbot', 'Player ESP', 'Loot ESP', 'Memory Safe', 'Auto Update', 'Stream Proof'], 'https://i.postimg.cc/Zqm87yk5/exodus-fn.webp', 'undetected', ARRAY['fortnite', 'external', 'aimbot'], true),
 ('ultimate-fortnite-external', 'Ultimate - Fortnite External', 'Fortnite', 'cheat', 'Ultimate external cheat package for Fortnite with all features included.', ARRAY['Full Feature Set', 'Aimbot', 'ESP', 'Misc Features', 'Priority Support', 'Regular Updates'], 'https://i.postimg.cc/kGL8x2Nv/ULTIMATE.webp', 'undetected', ARRAY['fortnite', 'external', 'premium'], true),
 ('venom-fortnite-external', 'Venom - Fortnite External', 'Fortnite', 'cheat', 'Powerful external Fortnite cheat with advanced targeting and ESP capabilities.', ARRAY['Advanced Aimbot', 'Full ESP', 'Radar Hack', 'Stream Proof', 'Regular Updates', 'Anti-Screenshot'], 'https://i.postimg.cc/W1LgzJ1r/venom-fn.webp', 'undetected', ARRAY['fortnite', 'external', 'advanced'], false),
-('warp-fortnite-private', 'Warp - Fortnite Private', 'Fortnite', 'cheat', 'Private Fortnite cheat with exclusive features and maximum security. Limited slots available.', ARRAY['Private Build', 'Exclusive Features', 'VIP Support', 'Limited Slots', 'Maximum Security', 'Priority Updates'], 'https://i.postimg.cc/XJJymfQR/fortnite-private.webp', 'undetected', ARRAY['fortnite', 'private', 'exclusive'], true)
+('valor-fortnite-private', 'Valor - Fortnite Private', 'Fortnite', 'cheat', 'Private Fortnite cheat with exclusive features and maximum security. Limited slots available.', ARRAY['Private Build', 'Exclusive Features', 'VIP Support', 'Limited Slots', 'Maximum Security', 'Priority Updates'], 'https://i.postimg.cc/XJJymfQR/fortnite-private.webp', 'undetected', ARRAY['fortnite', 'private', 'exclusive'], true)
 ON CONFLICT (slug) DO UPDATE SET
   name = EXCLUDED.name,
   game = EXCLUDED.game,

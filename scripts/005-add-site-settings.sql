@@ -8,8 +8,10 @@ CREATE TABLE IF NOT EXISTS site_settings (
 -- Insert default settings
 INSERT INTO site_settings (key, value) VALUES
   ('payment_provider', '"stripe"'),
-  ('cardsetup_store_url', '"https://warpcheats.com"'),
-  ('site_name', '"Warp Cheats"'),
-  ('site_url', '"https://warpcheats.com"'),
+  ('cardsetup_store_url', '"https://valor.com"'),
+  ('site_name', '"Valor"'),
+  ('site_url', '"https://valor.com"'),
   ('maintenance_mode', 'false')
 ON CONFLICT (key) DO NOTHING;
+
+

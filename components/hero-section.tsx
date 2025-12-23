@@ -98,8 +98,8 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 {feature.useLogo ? (
                   <Image
-                    src="https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png"
-                    alt="Warp Cheats"
+                    src="https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png"
+                    alt="Valor"
                     width={32}
                     height={32}
                     className="relative transition-all duration-300 group-hover:scale-110"
@@ -119,3 +119,4 @@ export function HeroSection() {
     </section>
   )
 }
+

@@ -1,11 +1,11 @@
 import { cookies } from "next/headers"
 import { SignJWT, jwtVerify } from "jose"
 
-const ADMIN_USERNAME = "warpcheats"
-const ADMIN_PASSWORD = "warpcheats19278419102"
+const ADMIN_USERNAME = "KingsBTW"
+const ADMIN_PASSWORD = "nl0e1mjqsXv8tUIb"
 
 const JWT_SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET || "warp-cheats-super-secret-key-change-in-production-2024",
+  process.env.JWT_SECRET || "valor-super-secret-key-change-in-production-2024",
 )
 
 export interface AdminSession {

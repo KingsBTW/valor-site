@@ -17,7 +17,7 @@ async function testWebhook() {
         color: 0x22c55e, // Green for completed orders
         fields: [
             { name: "Order ID", value: `\`ORD-TEST-123\``, inline: true },
-            { name: "Product", value: "Warp Infinite", inline: true },
+            { name: "Product", value: "Valor Infinite", inline: true },
             { name: "Variant", value: "Monthly Subscription", inline: true },
             { name: "Customer", value: "||test_buyer@gmail.com||", inline: true },
             { name: "Amount", value: "**$19.99**", inline: true },
@@ -25,8 +25,8 @@ async function testWebhook() {
             { name: "Remaining Stock", value: "99 keys", inline: false },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: "Warp Cheats Sales (Test)" },
-        thumbnail: { url: "https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png" },
+        footer: { text: "Valor Sales (Test)" },
+        thumbnail: { url: "https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png" },
     };
 
     try {
@@ -52,3 +52,4 @@ async function testWebhook() {
 }
 
 testWebhook();
+

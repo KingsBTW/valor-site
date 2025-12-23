@@ -123,7 +123,7 @@ export async function createCheckoutSession(data: {
   }
 
   const headersList = await headers()
-  const origin = headersList.get("origin") || "https://warpcheats.com"
+  const origin = headersList.get("origin") || "https://valor.com"
 
   const session = await stripe.checkout.sessions.create({
     ui_mode: "embedded",
@@ -212,3 +212,4 @@ export async function getCheckoutSessionStatus(sessionId: string) {
     paymentStatus: session.payment_status,
   }
 }
+

@@ -39,8 +39,8 @@ export function AdminSidebar() {
         <Link href="/admin" className="flex items-center gap-3 group">
           <div className="relative">
             <Image
-              src="https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png"
-              alt="Warp Cheats Logo"
+              src="https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png"
+              alt="Valor Logo"
               width={32}
               height={32}
               className="object-contain"
@@ -48,9 +48,8 @@ export function AdminSidebar() {
             <Zap className="h-3 w-3 text-primary absolute -bottom-0.5 -right-0.5" />
           </div>
           <div>
-            <span className="text-lg font-bold">
-              <span className="gradient-text">WARP</span>
-              <span className="text-foreground">CHEATS</span>
+            <span className="text-lg font-bold gradient-text">
+              VALOR
             </span>
             <span className="block text-xs text-muted-foreground -mt-1">Admin Panel</span>
           </div>
@@ -101,3 +100,4 @@ export function AdminSidebar() {
     </aside>
   )
 }
+

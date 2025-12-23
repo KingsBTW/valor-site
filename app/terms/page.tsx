@@ -25,7 +25,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-foreground mb-4">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing and using Warp Cheats, you agree to be bound by these Terms of Service. If you do not
+                By accessing and using Valor, you agree to be bound by these Terms of Service. If you do not
                 agree to these terms, you must not use our services.
               </p>
             </section>
@@ -55,7 +55,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-foreground mb-4">4. Intellectual Property</h2>
               <p className="text-muted-foreground leading-relaxed">
-                All content, software, and materials provided by Warp Cheats are protected by intellectual property
+                All content, software, and materials provided by Valor are protected by intellectual property
                 laws. You may not copy, distribute, or reverse engineer our products.
               </p>
             </section>
@@ -63,7 +63,7 @@ export default function TermsPage() {
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-foreground mb-4">5. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Warp Cheats is not liable for any damages resulting from the use of our products, including but not
+                Valor is not liable for any damages resulting from the use of our products, including but not
                 limited to game bans, hardware issues, or account suspensions.
               </p>
             </section>
@@ -79,7 +79,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold text-foreground mb-4">7. Contact</h2>
               <p className="text-muted-foreground leading-relaxed">
-                For questions about these terms, please contact us at legal@warpcheats.com
+                For questions about these terms, please contact us at legal@valor.com
               </p>
             </section>
           </div>

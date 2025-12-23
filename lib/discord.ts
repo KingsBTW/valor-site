@@ -40,8 +40,8 @@ export async function sendDiscordOrderNotification(data: {
       { name: "Remaining Stock", value: `${data.remainingStock} keys`, inline: false },
     ],
     timestamp: new Date().toISOString(),
-    footer: { text: "Warp Cheats Sales" },
-    thumbnail: { url: "https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png" },
+    footer: { text: "Valor Sales" },
+    thumbnail: { url: "https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png" },
   }
 
   try {
@@ -74,7 +74,7 @@ export async function sendDiscordStockAlert(data: {
     color: 0xfbbf24, // Yellow/warning color
     fields: [{ name: "Remaining Keys", value: `${data.remainingStock}`, inline: true }],
     timestamp: new Date().toISOString(),
-    footer: { text: "Warp Cheats - Restock Soon!" },
+    footer: { text: "Valor - Restock Soon!" },
   }
 
   try {
@@ -110,7 +110,7 @@ export async function sendDiscordErrorNotification(data: {
       ...(data.context ? [{ name: "Context", value: data.context, inline: false }] : []),
     ],
     timestamp: new Date().toISOString(),
-    footer: { text: "Warp Cheats - Requires Attention" },
+    footer: { text: "Valor - Requires Attention" },
   }
 
   try {
@@ -126,3 +126,4 @@ export async function sendDiscordErrorNotification(data: {
     console.error("Failed to send Discord error notification:", error)
   }
 }
+

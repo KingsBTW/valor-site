@@ -22,10 +22,11 @@ export async function createLicenseKeyForOrder(
   variantId: string,
   orderId: string,
   durationDays: number | null,
+  customKey?: string,
 ): Promise<LicenseKey | null> {
   const supabase = await createClient()
 
-  const licenseKey = generateLicenseKey()
+  const licenseKey = customKey || generateLicenseKey()
   const expiresAt = durationDays ? new Date(Date.now() + durationDays * 24 * 60 * 60 * 1000).toISOString() : null
 
   const { data, error } = await supabase

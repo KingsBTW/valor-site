@@ -1,5 +1,5 @@
 -- =============================================
--- WARP CHEATS - DATABASE SETUP SCRIPT
+-- VALOR - DATABASE SETUP SCRIPT
 -- Run this first to create all tables
 -- =============================================
 
@@ -185,3 +185,4 @@ CREATE TRIGGER update_site_settings_updated_at BEFORE UPDATE ON site_settings FO
 
 DROP TRIGGER IF EXISTS update_support_tickets_updated_at ON support_tickets;
 CREATE TRIGGER update_support_tickets_updated_at BEFORE UPDATE ON support_tickets FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+

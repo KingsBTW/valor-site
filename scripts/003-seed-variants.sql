@@ -1,5 +1,5 @@
 -- =============================================
--- WARP CHEATS - PRODUCT VARIANTS WITH EXACT PRICING
+-- VALOR - PRODUCT VARIANTS WITH EXACT PRICING
 -- =============================================
 
 -- Disconnect - Fortnite External
@@ -62,14 +62,14 @@ SELECT id, 'One Time Use', NULL, 2399, 1 FROM products WHERE slug = 'verse-perm-
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order) 
 SELECT id, 'Lifetime', NULL, 7099, 2 FROM products WHERE slug = 'verse-perm-spoofer' ON CONFLICT DO NOTHING;
 
--- Warp - Fortnite Private
+-- Valor - Fortnite Private
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order) 
-SELECT id, '1 Day', 1, 799, 1 FROM products WHERE slug = 'warp-fortnite-private' ON CONFLICT DO NOTHING;
+SELECT id, '1 Day', 1, 799, 1 FROM products WHERE slug = 'valor-fortnite-private' ON CONFLICT DO NOTHING;
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order) 
-SELECT id, '3 Day', 3, 1199, 2 FROM products WHERE slug = 'warp-fortnite-private' ON CONFLICT DO NOTHING;
+SELECT id, '3 Day', 3, 1199, 2 FROM products WHERE slug = 'valor-fortnite-private' ON CONFLICT DO NOTHING;
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order) 
-SELECT id, '7 Day', 7, 1999, 3 FROM products WHERE slug = 'warp-fortnite-private' ON CONFLICT DO NOTHING;
+SELECT id, '7 Day', 7, 1999, 3 FROM products WHERE slug = 'valor-fortnite-private' ON CONFLICT DO NOTHING;
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order) 
-SELECT id, '31 Day', 31, 3999, 4 FROM products WHERE slug = 'warp-fortnite-private' ON CONFLICT DO NOTHING;
+SELECT id, '31 Day', 31, 3999, 4 FROM products WHERE slug = 'valor-fortnite-private' ON CONFLICT DO NOTHING;
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order) 
-SELECT id, 'Lifetime', NULL, 14999, 5 FROM products WHERE slug = 'warp-fortnite-private' ON CONFLICT DO NOTHING;
+SELECT id, 'Lifetime', NULL, 14999, 5 FROM products WHERE slug = 'valor-fortnite-private' ON CONFLICT DO NOTHING;

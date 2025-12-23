@@ -22,7 +22,7 @@ export default function AdminSettingsPage() {
   const [isSaving, setIsSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   const [paymentProvider, setPaymentProvider] = useState<PaymentProvider>("stripe")
-  const [cardSetupStoreUrl, setCardSetupStoreUrl] = useState("https://warpcheats.com")
+  const [cardSetupStoreUrl, setCardSetupStoreUrl] = useState("https://valor.com")
   const [maintenanceMode, setMaintenanceMode] = useState(false)
 
   useEffect(() => {
@@ -232,11 +232,11 @@ export default function AdminSettingsPage() {
             <div className="grid gap-4">
               <div className="space-y-2">
                 <Label>Site Name</Label>
-                <Input defaultValue="Warp Cheats" className="bg-input border-border" />
+                <Input defaultValue="Valor" className="bg-input border-border" />
               </div>
               <div className="space-y-2">
                 <Label>Site URL</Label>
-                <Input defaultValue="https://warpcheats.com" className="bg-input border-border" />
+                <Input defaultValue="https://valor.com" className="bg-input border-border" />
               </div>
             </div>
             <Separator className="bg-border" />
@@ -320,7 +320,7 @@ export default function AdminSettingsPage() {
             <div className="p-4 rounded-lg bg-muted/30 border border-border">
               <p className="font-medium text-foreground mb-2">Required for Card Setup:</p>
               <code className="text-xs text-muted-foreground font-mono block">
-                CARDSETUP_STORE_URL=https://warpcheats.com
+                CARDSETUP_STORE_URL=https://valor.com
               </code>
             </div>
             <div className="p-4 rounded-lg bg-muted/30 border border-border">
@@ -335,3 +335,4 @@ export default function AdminSettingsPage() {
     </div>
   )
 }
+

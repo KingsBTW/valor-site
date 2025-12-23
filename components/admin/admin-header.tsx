@@ -84,7 +84,7 @@ export function AdminHeader() {
                 <span className="text-sm font-bold text-primary">S</span>
               </div>
               {/* // Show actual admin username */}
-              <span className="hidden sm:block text-sm font-medium">warpcheats</span>
+              <span className="hidden sm:block text-sm font-medium">KingsBTW</span>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="glass-panel border-primary/20">

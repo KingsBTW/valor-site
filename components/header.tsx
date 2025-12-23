@@ -12,7 +12,7 @@ const navigation = [
   { name: "Products", href: "/products" },
   { name: "Status", href: "/status" },
   { name: "FAQ", href: "/faq" },
-  { name: "Support", href: "https://discord.gg/warpcheats", external: true },
+  { name: "Support", href: "https://discord.gg/valorcheats", external: true },
 ]
 
 export function Header() {
@@ -41,16 +41,15 @@ export function Header() {
             <div className="relative">
               <div className="absolute inset-0 bg-primary/30 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Image
-                src="https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png"
-                alt="Warp Cheats Logo"
+                src="https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png"
+                alt="Valor Logo"
                 width={40}
                 height={40}
                 className="relative transition-all duration-300 group-hover:scale-110"
               />
             </div>
-            <span className="text-xl font-bold tracking-tight">
-              <span className="gradient-text">WARP</span>
-              <span className="text-foreground">CHEATS</span>
+            <span className="text-xl font-bold tracking-tight gradient-text">
+              VALOR
             </span>
           </Link>
         </div>
@@ -181,3 +180,5 @@ export function Header() {
 }
 
 export default Header
+
+

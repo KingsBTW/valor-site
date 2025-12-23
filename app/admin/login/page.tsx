@@ -97,8 +97,8 @@ export default function AdminLoginPage() {
               style={{ animation: "pulse-glow 3s ease-in-out infinite" }}
             >
               <Image
-                src="https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png"
-                alt="Warp Cheats Logo"
+                src="https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png"
+                alt="Valor Logo"
                 width={48}
                 height={48}
               />
@@ -114,7 +114,7 @@ export default function AdminLoginPage() {
               </div>
               <CardTitle className="text-3xl font-bold text-white">Admin Portal</CardTitle>
               <CardDescription className="text-gray-400">
-                Sign in to access the Warp Cheats control panel
+                Sign in to access the Valor control panel
               </CardDescription>
             </div>
           </CardHeader>
@@ -206,3 +206,6 @@ export default function AdminLoginPage() {
     </div>
   )
 }
+
+
+

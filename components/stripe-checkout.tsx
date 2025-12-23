@@ -16,11 +16,11 @@ import Image from "next/image"
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!)
 
-// Custom appearance matching Warp Cheats blue theme
+// Custom appearance matching Valor orange-red theme
 const appearance: Appearance = {
   theme: "night",
   variables: {
-    colorPrimary: "#90bdf8",
+    colorPrimary: "#ff783c",
     colorBackground: "#1a1a1a",
     colorText: "#f5f5f5",
     colorDanger: "#ef4444",
@@ -32,26 +32,26 @@ const appearance: Appearance = {
   },
   rules: {
     ".Tab": {
-      border: "1px solid rgba(144, 189, 248, 0.3)",
-      boxShadow: "0 0 10px rgba(144, 189, 248, 0.1)",
+      border: "1px solid rgba(255, 120, 60, 0.3)",
+      boxShadow: "0 0 10px rgba(255, 120, 60, 0.1)",
       backgroundColor: "#1a1a1a",
     },
     ".Tab:hover": {
       color: "#f5f5f5",
-      borderColor: "rgba(144, 189, 248, 0.5)",
+      borderColor: "rgba(255, 120, 60, 0.5)",
     },
     ".Tab--selected": {
-      borderColor: "#90bdf8",
-      backgroundColor: "rgba(144, 189, 248, 0.1)",
-      boxShadow: "0 0 20px rgba(144, 189, 248, 0.3)",
+      borderColor: "#ff783c",
+      backgroundColor: "rgba(255, 120, 60, 0.1)",
+      boxShadow: "0 0 20px rgba(255, 120, 60, 0.3)",
     },
     ".Input": {
       backgroundColor: "#262626",
-      border: "1px solid rgba(144, 189, 248, 0.2)",
+      border: "1px solid rgba(255, 120, 60, 0.2)",
     },
     ".Input:focus": {
-      borderColor: "#90bdf8",
-      boxShadow: "0 0 0 2px rgba(144, 189, 248, 0.2)",
+      borderColor: "#ff783c",
+      boxShadow: "0 0 0 2px rgba(255, 120, 60, 0.2)",
     },
     ".Input--invalid": {
       borderColor: "#ef4444",

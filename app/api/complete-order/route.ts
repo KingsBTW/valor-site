@@ -4,6 +4,7 @@ import { createLicenseKeyForOrder } from "@/lib/db/license-keys"
 import { getVariantById, getProductById } from "@/lib/db/products"
 import { sendDiscordOrderNotification } from "@/lib/discord"
 import { sendPurchaseConfirmationEmail } from "@/lib/email"
+import { fetchExternalLicenseKey, hasExternalAPI } from "@/lib/external-key-api"
 
 export async function POST(req: Request) {
   try {
@@ -26,8 +27,36 @@ export async function POST(req: Request) {
     const variant = await getVariantById(order.variant_id)
 
     const durationDays = variant?.duration_days || null
+    let licenseKeyValue = ""
 
-    const licenseKey = await createLicenseKeyForOrder(order.variant_id, order.id, durationDays)
+    // Check if product has external API configured
+    if (product?.slug && hasExternalAPI(product.slug)) {
+      console.log(`[Order] Fetching external key for ${product.slug}`)
+      
+      const externalKeyResult = await fetchExternalLicenseKey(product.slug, {
+        orderNumber: order.order_number,
+        customerEmail: order.customer_email,
+        variantName: variant?.name || "Unknown",
+        productName: product.name,
+      })
+
+      if (externalKeyResult.success && externalKeyResult.key) {
+        licenseKeyValue = externalKeyResult.key
+        console.log(`[Order] Successfully fetched external key`)
+      } else {
+        console.error(`[Order] Failed to fetch external key: ${externalKeyResult.error}`)
+        // Fallback to local key generation
+        console.log(`[Order] Falling back to local key generation`)
+      }
+    }
+
+    // Create license key record (with external key if available, otherwise generate local)
+    const licenseKey = await createLicenseKeyForOrder(
+      order.variant_id, 
+      order.id, 
+      durationDays,
+      licenseKeyValue || undefined
+    )
 
     if (!licenseKey) {
       return NextResponse.json({ error: "Failed to create license key" }, { status: 500 })

@@ -84,7 +84,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-foreground mb-4">7. Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
-                For privacy-related inquiries, contact us at privacy@warpcheats.com
+                For privacy-related inquiries, contact us at privacy@valor.com
               </p>
             </section>
           </div>

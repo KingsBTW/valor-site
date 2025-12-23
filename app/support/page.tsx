@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation"
 
 export default function SupportPage() {
-  redirect("https://discord.gg/warpcheats")
+  redirect("https://discord.gg/valorcheats")
 }
+

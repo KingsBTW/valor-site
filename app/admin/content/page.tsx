@@ -14,8 +14,8 @@ export default function AdminContentPage() {
   const [heroSubtitle, setHeroSubtitle] = useState(
     "Premium gaming enhancement software trusted by over 50,000 elite players. Undetected, feature-rich, and backed by 24/7 support.",
   )
-  const [discordLink, setDiscordLink] = useState("https://discord.gg/warpcheats")
-  const [supportEmail, setSupportEmail] = useState("support@warpcheats.com")
+  const [discordLink, setDiscordLink] = useState("https://discord.gg/valorcheats")
+  const [supportEmail, setSupportEmail] = useState("support@valor.com")
 
   return (
     <div className="space-y-6">
@@ -144,7 +144,7 @@ export default function AdminContentPage() {
               </div>
               <div className="space-y-2">
                 <Label>Business Email</Label>
-                <Input defaultValue="business@warpcheats.com" className="bg-input border-border" />
+                <Input defaultValue="business@valor.com" className="bg-input border-border" />
               </div>
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Save className="h-4 w-4 mr-2" />
@@ -202,3 +202,5 @@ export default function AdminContentPage() {
     </div>
   )
 }
+
+

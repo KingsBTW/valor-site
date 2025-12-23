@@ -9,14 +9,14 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
-  title: "Warp Cheats - Premium Gaming Software",
+  title: "Valor - Premium Gaming Software",
   description: "Undetected. Unstoppable. Premium gaming enhancement software for elite players.",
   keywords: ["gaming software", "cheats", "hacks", "undetected", "premium"],
   generator: "v0.app",
   icons: {
-    icon: "https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png",
-    shortcut: "https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png",
-    apple: "https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png",
+    icon: "https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png",
+    shortcut: "https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png",
+    apple: "https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png",
   },
 }
 
@@ -35,3 +35,4 @@ export default function RootLayout({
     </html>
   )
 }
+

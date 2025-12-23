@@ -6,6 +6,7 @@ declare global {
   interface Window {
     Tawk_API?: {
       onLoad?: () => void
+      onLoaded?: () => void
       hideWidget?: () => void
       showWidget?: () => void
       toggle?: () => void
@@ -31,27 +32,28 @@ export function TawkChat() {
       return
     }
 
-    // Initialize Tawk_API and Tawk_LoadStart
-    window.Tawk_API = window.Tawk_API || {}
+    // Initialize Tawk_API with all required properties
+    window.Tawk_API = {
+      onLoad: () => {},
+      onLoaded: () => {
+        setLoaded(true)
+      },
+    }
     window.Tawk_LoadStart = new Date()
 
-    // Hardcoded Tawk.to IDs from your script
-    const tawkPropertyId = "69451270fea955197cd68294"
-    const tawkWidgetId = "1jcqt01pl"
+    // Tawk.to IDs
+    const tawkPropertyId = "694aff2fe73714198407f10d"
+    const tawkWidgetId = "1jd6f9kbb"
 
     // Create and inject the script
     const script = document.createElement("script")
     script.async = true
     script.src = `https://embed.tawk.to/${tawkPropertyId}/${tawkWidgetId}`
-    script.charset = "UTF-8"
     script.setAttribute("crossorigin", "*")
 
     script.onerror = () => {
       // Silently fail - don't break the app if Tawk.to is blocked
-    }
-
-    script.onload = () => {
-      setLoaded(true)
+      console.warn("Tawk.to chat widget failed to load")
     }
 
     // Insert script

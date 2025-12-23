@@ -67,7 +67,7 @@ export default function RefundPage() {
             <section>
               <h2 className="text-xl font-semibold text-foreground mb-4">Contact</h2>
               <p className="text-muted-foreground leading-relaxed">
-                For refund requests, contact billing@warpcheats.com with your order details.
+                For refund requests, contact billing@valor.com with your order details.
               </p>
             </section>
           </div>

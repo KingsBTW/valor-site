@@ -248,96 +248,59 @@ CREATE POLICY "Service role full access to categories" ON categories
 -- SEED PRODUCTS
 -- =============================================
 INSERT INTO products (slug, name, game, category, description, features, image_url, status, tags, popular, active) VALUES
-('disconnect-fortnite-external', 'Disconnect - Fortnite External', 'Fortnite', 'cheat', 'Premium external cheat for Fortnite with advanced features and undetected status.', ARRAY['Aimbot', 'Player ESP', 'Loot ESP', 'Radar', 'Stream Safe', 'Auto Update'], 'https://i.postimg.cc/TwRcw5QZ/disconnect-fn.webp', 'undetected', ARRAY['fortnite', 'external', 'premium'], true, true),
-('exodus-fortnite-external', 'Exodus - Fortnite External', 'Fortnite', 'cheat', 'High-performance external Fortnite cheat with smooth aimbot and advanced ESP features.', ARRAY['Smooth Aimbot', 'Player ESP', 'Loot ESP', 'Memory Safe', 'Auto Update', 'Stream Proof'], 'https://i.postimg.cc/Zqm87yk5/exodus-fn.webp', 'undetected', ARRAY['fortnite', 'external', 'aimbot'], true, true),
-('ultimate-fortnite-external', 'Ultimate - Fortnite External', 'Fortnite', 'cheat', 'Ultimate external cheat package for Fortnite with all features included.', ARRAY['Full Feature Set', 'Aimbot', 'ESP', 'Misc Features', 'Priority Support', 'Regular Updates'], 'https://i.postimg.cc/kGL8x2Nv/ULTIMATE.webp', 'undetected', ARRAY['fortnite', 'external', 'premium'], true, true),
-('venom-fortnite-external', 'Venom - Fortnite External', 'Fortnite', 'cheat', 'Powerful external Fortnite cheat with advanced targeting and ESP capabilities.', ARRAY['Advanced Aimbot', 'Full ESP', 'Radar Hack', 'Stream Proof', 'Regular Updates', 'Anti-Screenshot'], 'https://i.postimg.cc/W1LgzJ1r/venom-fn.webp', 'undetected', ARRAY['fortnite', 'external', 'advanced'], false, true),
-('warp-fortnite-private', 'Warp - Fortnite Private', 'Fortnite', 'cheat', 'Private Fortnite cheat with exclusive features and maximum security. Limited slots available.', ARRAY['Private Build', 'Exclusive Features', 'VIP Support', 'Limited Slots', 'Maximum Security', 'Priority Updates'], 'https://i.postimg.cc/XJJymfQR/fortnite-private.webp', 'undetected', ARRAY['fortnite', 'private', 'exclusive'], true, true),
-('exodus-temp-spoofer', 'Exodus - Temp Spoofer', 'Universal', 'spoofer', 'Temporary HWID spoofer for Fortnite. Session-based hardware masking for safe gameplay.', ARRAY['Session Spoof', 'Quick Setup', 'Light Weight', 'All Anti-Cheats', 'No Traces', 'Budget Option'], 'https://i.postimg.cc/B6Y2nYjt/EXODUS-TEMP.webp', 'undetected', ARRAY['spoofer', 'hwid', 'temporary'], true, true),
-('verse-perm-spoofer', 'Verse - Perm Spoofer', 'Universal', 'spoofer', 'Permanent HWID spoofer that survives reboots. Full hardware masking for maximum protection.', ARRAY['Permanent Spoof', 'All Hardware IDs', 'Survives Reboot', 'Easy Setup', 'Auto Updates', '24/7 Support'], 'https://i.postimg.cc/mrT9NfMb/VERSE-PERM.webp', 'undetected', ARRAY['spoofer', 'hwid', 'permanent'], false, true);
+('temp-spoofer', 'Temp Spoofer', 'Universal', 'spoofer', '24h2 supported Undetected HWID Spoofer for PC Games. Bypass hardware bans instantly with our Undetected HWID Spoofer. Whether you''ve been flagged by Easy Anti-Cheat (EAC), BattlEye, Vanguard, or Faceit, our powerful HWID changer for games gives you a clean identity — and a second chance to play. Perfect for competitive gamers facing hardware bans, our spoofer resets your system identifiers in seconds and keeps you undetected in every match.', ARRAY['Session Spoof', 'Quick Setup', 'Light Weight', 'All Anti-Cheats', 'No Traces', 'Budget Option', 'One Click'], 'https://i.postimg.cc/LhFHjP58/temp.png', 'undetected', ARRAY['spoofer', 'hwid', 'temporary'], true, true),
+('perm-spoofer', 'Perm Spoofer', 'Universal', 'spoofer', 'Permanent HWID spoofer that survives reboots. Full hardware masking.', ARRAY['Permanent Spoof', 'All Hardware IDs', 'Survives Reboot', 'Easy Setup', 'Auto Updates', '24/7 Support'], 'https://i.postimg.cc/RC6KQzqJ/perm.png', 'undetected', ARRAY['spoofer', 'hwid', 'permanent'], true, true),
+('fortnite-public', 'Fortnite Public', 'Fortnite', 'cheat', 'Premium external cheat for Fortnite with advanced aimbot and ESP features. Undetected and kernel-level protection.', ARRAY['Silent Aim', 'Player ESP', 'Loot ESP', 'Aimbot FOV', 'Triggerbot', 'Stream Proof'], 'https://i.postimg.cc/9MSXFKjk/pub.png', 'undetected', ARRAY['fortnite', 'external', 'public'], true, true),
+('fortnite-private', 'Fortnite Private', 'Fortnite', 'cheat', 'Premium external cheat for Fortnite with advanced aimbot and ESP features. Undetected and kernel-level protection.', ARRAY['Mouse Aim', 'Memory Aim', 'Aim FOV', 'Prediction', 'Visible Check', '2D Box', 'Corner Box', 'Filled Box', 'Skeleton', 'Snapline', 'Rank Display', 'Platform Display', 'Distance Display', 'Spectator Count', 'Username Display'], 'https://i.postimg.cc/zfxX43tc/priv.png', 'undetected', ARRAY['fortnite', 'external', 'private'], true, true);
 
 -- =============================================
 -- SEED VARIANTS
 -- =============================================
 
--- Disconnect
+-- Temp Spoofer
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '1 Day', 1, 899, 1, true FROM products WHERE slug = 'disconnect-fortnite-external';
+SELECT id, '3 Day', 3, 699, 1, true FROM products WHERE slug = 'temp-spoofer';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '3 Day', 3, 1799, 2, true FROM products WHERE slug = 'disconnect-fortnite-external';
+SELECT id, '15 Day', 15, 1499, 2, true FROM products WHERE slug = 'temp-spoofer';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '7 Day', 7, 3499, 3, true FROM products WHERE slug = 'disconnect-fortnite-external';
+SELECT id, '31 Day', 31, 2999, 3, true FROM products WHERE slug = 'temp-spoofer';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '30 Day', 30, 6499, 4, true FROM products WHERE slug = 'disconnect-fortnite-external';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, 'Lifetime', NULL, 29999, 5, true FROM products WHERE slug = 'disconnect-fortnite-external';
+SELECT id, '90 Day', 90, 7999, 4, true FROM products WHERE slug = 'temp-spoofer';
 
--- Exodus
+-- Perm Spoofer
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '1 Day', 1, 399, 1, true FROM products WHERE slug = 'exodus-fortnite-external';
+SELECT id, 'One-Time', NULL, 2099, 1, true FROM products WHERE slug = 'perm-spoofer';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '3 Day', 3, 799, 2, true FROM products WHERE slug = 'exodus-fortnite-external';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '7 Day', 7, 1999, 3, true FROM products WHERE slug = 'exodus-fortnite-external';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '30 Day', 30, 3999, 4, true FROM products WHERE slug = 'exodus-fortnite-external';
+SELECT id, 'Lifetime', NULL, 5299, 2, true FROM products WHERE slug = 'perm-spoofer';
 
--- Exodus Temp
+-- Fortnite Public
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '1 Day', 1, 299, 1, true FROM products WHERE slug = 'exodus-temp-spoofer';
+SELECT id, '1 Day', 1, 599, 1, true FROM products WHERE slug = 'fortnite-public';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '3 Day', 3, 599, 2, true FROM products WHERE slug = 'exodus-temp-spoofer';
+SELECT id, '7 Day', 7, 3199, 2, true FROM products WHERE slug = 'fortnite-public';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '7 Day', 7, 999, 3, true FROM products WHERE slug = 'exodus-temp-spoofer';
+SELECT id, '31 Day', 31, 5999, 3, true FROM products WHERE slug = 'fortnite-public';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '29 Day', 29, 1999, 4, true FROM products WHERE slug = 'exodus-temp-spoofer';
+SELECT id, 'Lifetime', NULL, 14999, 4, true FROM products WHERE slug = 'fortnite-public';
 
--- Ultimate
+-- Fortnite Private
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '1 Day', 1, 599, 1, true FROM products WHERE slug = 'ultimate-fortnite-external';
+SELECT id, '1 Day', 1, 799, 1, true FROM products WHERE slug = 'fortnite-private';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '3 Day', 3, 1499, 2, true FROM products WHERE slug = 'ultimate-fortnite-external';
+SELECT id, '3 Day', 3, 1199, 2, true FROM products WHERE slug = 'fortnite-private';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '7 Day', 7, 2499, 3, true FROM products WHERE slug = 'ultimate-fortnite-external';
+SELECT id, '7 Day', 7, 1999, 3, true FROM products WHERE slug = 'fortnite-private';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '30 Day', 30, 4999, 4, true FROM products WHERE slug = 'ultimate-fortnite-external';
+SELECT id, '31 Day', 31, 3999, 4, true FROM products WHERE slug = 'fortnite-private';
 INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, 'Lifetime', NULL, 19999, 5, true FROM products WHERE slug = 'ultimate-fortnite-external';
-
--- Venom
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '1 Day', 1, 699, 1, true FROM products WHERE slug = 'venom-fortnite-external';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '3 Day', 3, 1499, 2, true FROM products WHERE slug = 'venom-fortnite-external';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '7 Day', 7, 2999, 3, true FROM products WHERE slug = 'venom-fortnite-external';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '30 Day', 30, 5999, 4, true FROM products WHERE slug = 'venom-fortnite-external';
-
--- Verse
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, 'One Time Use', NULL, 2399, 1, true FROM products WHERE slug = 'verse-perm-spoofer';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, 'Lifetime', NULL, 7099, 2, true FROM products WHERE slug = 'verse-perm-spoofer';
-
--- Warp
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '1 Day', 1, 799, 1, true FROM products WHERE slug = 'warp-fortnite-private';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '3 Day', 3, 1199, 2, true FROM products WHERE slug = 'warp-fortnite-private';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '7 Day', 7, 1999, 3, true FROM products WHERE slug = 'warp-fortnite-private';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, '31 Day', 31, 3999, 4, true FROM products WHERE slug = 'warp-fortnite-private';
-INSERT INTO product_variants (product_id, name, duration_days, price_cents, sort_order, active) 
-SELECT id, 'Lifetime', NULL, 14999, 5, true FROM products WHERE slug = 'warp-fortnite-private';
+SELECT id, 'Lifetime', NULL, 14999, 5, true FROM products WHERE slug = 'fortnite-private';
 
 -- =============================================
 -- SEED SITE SETTINGS
 -- =============================================
 INSERT INTO site_settings (key, value) VALUES
 ('payment_provider', '"stripe"'),
-('site_name', '"Warp Cheats"'),
-('site_url', '"https://warpcheats.com"'),
+('site_name', '"Valor"'),
+('site_url', '"https://valor.com"'),
 ('maintenance_mode', 'false')
 ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;

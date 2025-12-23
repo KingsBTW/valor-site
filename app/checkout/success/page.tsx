@@ -106,7 +106,7 @@ export default async function CheckoutSuccessPage({
                     Open a ticket in our Discord server to receive your license key
                   </p>
                   <Button asChild className="w-full bg-primary hover:bg-primary/90 mb-3">
-                    <a href="https://discord.gg/warpcheats" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.gg/valorcheats" target="_blank" rel="noopener noreferrer">
                       Open Discord Ticket
                     </a>
                   </Button>
@@ -151,7 +151,7 @@ export default async function CheckoutSuccessPage({
                     </Link>
                   </Button>
                   <Button asChild variant="outline" className="w-full bg-transparent border-primary/30">
-                    <Link href="https://discord.gg/warpcheats">Need Help? Join Discord</Link>
+                    <Link href="https://discord.gg/valorcheats">Need Help? Join Discord</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -244,7 +244,7 @@ export default async function CheckoutSuccessPage({
                         Open a ticket in our Discord server to receive your license key
                       </p>
                       <Button asChild className="w-full bg-primary hover:bg-primary/90 mb-3">
-                        <a href="https://discord.gg/warpcheats" target="_blank" rel="noopener noreferrer">
+                        <a href="https://discord.gg/valorcheats" target="_blank" rel="noopener noreferrer">
                           Open Discord Ticket
                         </a>
                       </Button>
@@ -296,7 +296,7 @@ export default async function CheckoutSuccessPage({
                     </Link>
                   </Button>
                   <Button asChild variant="outline" className="w-full bg-transparent border-primary/30">
-                    <Link href="https://discord.gg/warpcheats">Need Help? Join Discord</Link>
+                    <Link href="https://discord.gg/valorcheats">Need Help? Join Discord</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -407,7 +407,7 @@ export default async function CheckoutSuccessPage({
                       Open a ticket in our Discord server to receive your license key
                     </p>
                     <Button asChild className="w-full bg-primary hover:bg-primary/90 mb-3">
-                      <a href="https://discord.gg/warpcheats" target="_blank" rel="noopener noreferrer">
+                      <a href="https://discord.gg/valorcheats" target="_blank" rel="noopener noreferrer">
                         Open Discord Ticket
                       </a>
                     </Button>
@@ -450,7 +450,7 @@ export default async function CheckoutSuccessPage({
                   </Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full bg-transparent border-primary/30">
-                  <Link href="https://discord.gg/warpcheats">Need Help? Join Discord</Link>
+                  <Link href="https://discord.gg/valorcheats">Need Help? Join Discord</Link>
                 </Button>
               </div>
             </CardContent>
@@ -461,4 +461,6 @@ export default async function CheckoutSuccessPage({
     </div>
   )
 }
+
+
 

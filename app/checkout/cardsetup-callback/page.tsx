@@ -215,12 +215,12 @@ export default function CardSetupCallbackPage() {
                 <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/30">
                   <p className="text-sm text-center">Please create a support ticket in our Discord for assistance:</p>
                   <a
-                    href="https://discord.gg/warpcheats"
+                    href="https://discord.gg/valorcheats"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center text-primary hover:underline mt-2"
                   >
-                    discord.gg/warpcheats
+                    discord.gg/valorcheats
                   </a>
                 </div>
               )}
@@ -233,7 +233,7 @@ export default function CardSetupCallbackPage() {
                 <Link href="/products">Browse Products</Link>
               </Button>
               <Button asChild className="flex-1 bg-primary hover:bg-primary/90">
-                <Link href="https://discord.gg/warpcheats" target="_blank">
+                <Link href="https://discord.gg/valorcheats" target="_blank">
                   Join Discord
                 </Link>
               </Button>
@@ -244,4 +244,6 @@ export default function CardSetupCallbackPage() {
     </div>
   )
 }
+
+
 

@@ -12,8 +12,8 @@ const footerLinks = {
   support: [
     { name: "FAQ", href: "/faq" },
     { name: "Status Page", href: "/status" },
-    { name: "Discord Support", href: "https://discord.gg/warpcheats", external: true },
-    { name: "Contact", href: "https://discord.gg/warpcheats", external: true },
+    { name: "Discord Support", href: "https://discord.gg/valorcheats", external: true },
+    { name: "Contact", href: "https://discord.gg/valorcheats", external: true },
   ],
   legal: [
     { name: "Terms of Service", href: "/terms" },
@@ -35,16 +35,15 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative">
                 <Image
-                  src="https://i.postimg.cc/g2WLmFgX/warp-logo-blue-removebg-preview.png"
-                  alt="Warp Cheats Logo"
+                  src="https://i.postimg.cc/rsCspgyJ/image-removebg-preview.png"
+                  alt="Valor Logo"
                   width={40}
                   height={40}
                   className="transition-transform group-hover:scale-110"
                 />
               </div>
-              <span className="text-xl font-bold">
-                <span className="gradient-text">WARP</span>
-                <span className="text-foreground">CHEATS</span>
+              <span className="text-xl font-bold gradient-text">
+                VALOR
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs leading-relaxed">
@@ -53,7 +52,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4 mt-6">
               <a
-                href="https://discord.gg/warpcheats"
+                href="https://discord.gg/valorcheats"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-all hover-glow"
@@ -61,7 +60,7 @@ export function Footer() {
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="mailto:support@warpcheats.com"
+                href="mailto:support@valor.com"
                 className="h-10 w-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-all hover-glow"
               >
                 <Mail className="h-5 w-5" />
@@ -138,7 +137,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-primary/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Warp Cheats. All rights reserved.
+            &copy; {new Date().getFullYear()} Valor. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground flex items-center gap-2">
             Payment secured by <span className="text-primary font-medium">Stripe</span>
@@ -151,3 +150,5 @@ export function Footer() {
 }
 
 export default Footer
+
+
