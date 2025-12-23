@@ -26,13 +26,6 @@ export function TawkChat() {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    const hostname = window.location.hostname
-    const isProduction = hostname === "warpcheats.com" || hostname === "www.warpcheats.com"
-
-    if (!isProduction) {
-      return
-    }
-
     // Prevent duplicate loading
     if (loaded || window.Tawk_API) {
       return
@@ -43,8 +36,8 @@ export function TawkChat() {
     window.Tawk_LoadStart = new Date()
 
     // Hardcoded Tawk.to IDs from your script
-    const tawkPropertyId = "68f6d063511129194ce0f08e"
-    const tawkWidgetId = "1j821s1ga"
+    const tawkPropertyId = "69451270fea955197cd68294"
+    const tawkWidgetId = "1jcqt01pl"
 
     // Create and inject the script
     const script = document.createElement("script")
